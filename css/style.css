@@ -1,6 +1,6 @@
 /********** Templateb029b0 CSS **********/
 :root {
-    --primary: linear-gradient(-45deg, rgb(120, 86, 245), rgb(42, 0, 139));
+    --primary: linear-gradient(-45deg, rgb(146, 144, 250), rgb(2, 0, 139));
     --secondary: #545454;
     --light: #FDF5EB;
     --dark: #1E1916;
@@ -113,8 +113,9 @@ h6,
     transition: .5s;
 }
 .btn-primary{
-    background: linear-gradient(-45deg, rgb(120,86,245), rgb(42,0,139)) !important ;
+    background: linear-gradient(-45deg, #4c80f1, #2706e3) !important ;
     border-color: #ffffff !important;
+    border-radius: 6px;
 }
 .btn.btn-primary {
     color: #FFFFFF;
