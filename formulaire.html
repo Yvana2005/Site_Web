@@ -1,68 +1,68 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css/form.css" rel="stylesheet">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/form.css" rel="stylesheet">
+  <script src="js/script.js" defer></script>
 </head>
+
 <body>
-    <h1>Entrez les informations</h1>
-    <form action="traitement.php" method="POST">
-      <!-- <img src="img/img-form.jpg" alt=""> -->
-        <div class="form-group">
-            <input type="text" id="nom" name="nom" required placeholder="Nom">
-          </div>
-      
-          <div class="form-group">
-            <input type="text" id="prenom" name="prenom" required placeholder="prenom">
-          </div>
-      
-          <div class="form-group">
-            <input type="email" id="email" name="email" required placeholder="E-mail">
-          </div>
-      
-          <div class="form-group">
-            <input type="tel" id="phone" name="phone" required placeholder="Numero">
-          </div>
+  <div class="wrapper">
+    <form action="" method="post">
+      <h1>Entrez les informations</h1>
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" placeholder="Nom" required>
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Prenom" required>
+        </div>
+      </div>
 
-          <div class="form-group">
-            <select id="cycle" name="cycle" required placeholder="Cycle">
-              <option value="bts">BTS</option>
-              <option value="ingenieur">Ingénieur</option>
-              <option value="dut">DUT</option>
-            </select>
-          </div>
-      
-          <div class="form-group">
-            <select id="filiere" name="filiere" required placeholder="Filiere">
-              <option value="gsi">GSI</option>
-              <option value="grh">GRH</option>
-              <option value="cge">CGE</option>
-            </select>
-          </div>
-      
-          <!--<div class="form-group">
-            <label for="choix">Choix :</label>
-            <input type="checkbox" id="choix1" name="choix1">
-            <label for="choix1">Choix 1</label>
-            <input type="checkbox" id="choix2" name="choix2">
-            <label for="choix2">Choix 2</label>
-            <input type="checkbox" id="choix3" name="choix3">
-            <label for="choix3">Choix 3</label>
-          </div>-->
-      
-          <div class="form-group">
-            <textarea id="description" name="description" required placeholder="Description"></textarea>
-          </div>
+      <div class="input-box">
+        <div class="input-field">
+          <input type="email" placeholder="E-mail" required>
+        </div>
+        <div class="input-field">
+          <input type="tel" placeholder="Téléphone" required>
+        </div>
+      </div>
 
-          <div class="form-group">
-            <input type="text" id="age" name="age" required placeholder="Age">
-          </div>
-      
-          <div class="form-group">
-            <input type="submit" value="Envoyer">
-          </div>
-    </form>  
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" id="age" name="age" required placeholder="Age">
+        </div>
+
+        <div class="input-field">
+          <textarea id="description" name="description" required placeholder="Description"></textarea>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <div class="input-field">
+          <select id="cycle" name="cycle" required placeholder="Cycle">
+            <option value="bts">BTS</option>
+            <option value="ingenieur">Ingénieur</option>
+            <option value="dut">DUT</option>
+          </select>
+        </div>
+
+        <div class="input-field">
+          <select id="filiere" name="filiere" required placeholder="Filiere">
+            <option value="gsi">GSI</option>
+            <option value="grh">GRH</option>
+            <option value="cge">CGE</option>
+          </select>
+        </div>
+      </div>
+
+      <label><input type="checkbox">Ces informations son correct valide si tout va bien</label>
+
+      <button type="submit" class="btn">Valider</button>
+    </form>
+  </div>
 </body>
+
 </html>
