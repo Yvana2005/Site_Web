@@ -20,7 +20,8 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Préparation de la requête SQL d'insertion des données
-    $sql = "INSERT INTO user (nom, prenom, email, phone, cycle, filiere, description, age) VALUES (:nom, :prenom, :email, :phone, :cycle, :filiere, :description, :age)";
+    $sql = "INSERT INTO user (nom, prenom, email, phone, cycle, filiere, description, age) 
+                  VALUES (:nom, :prenom, :email, :phone, :cycle, :filiere, :description, :age)";
     $stmt = $conn->prepare($sql);
 
     // Exécution de la requête avec les valeurs des champs du formulaire
